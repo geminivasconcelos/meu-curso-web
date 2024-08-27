@@ -1,0 +1,67 @@
+<main>
+  <section class="section-logo">
+    <img src="../../../assets/logo-fundo-branco.png" alt="">
+  </section>
+  <section class="section-login">
+    <div class="container-titulo">
+      <h1 class="titulo-principal-container">Meu Curso</h1>
+      <h5>Meu Controle de Curso</h5>
+    </div>
+    <div class="container-inputs">
+      <ng-content></ng-content>
+    </div>
+    <div class="w-full flex justify-center items-center">
+      <button  app-button-default  (click)="submit()">{{primaryBtnText}}</button>
+    </div>
+    <div class="divider">
+      <div></div>
+      <span>or</span>
+      <div></div>
+    </div>
+
+    <div class="w-full flex justify-center items-center">
+      <button
+
+        app-button-defaul-white
+        (click)="navigate()"
+      >{{secondaryBtnText}}</button>
+    </div>
+  </section>
+
+  <!-- <mat-card class="w-full">
+    <mat-card-header class="w-full">
+      <mat-card-title class="flex w-full">
+        <img src="../../../assets/logo.png" alt="" class="img-title" />
+        <label class="font-kanit text-3xl">Expense Control</label>
+      </mat-card-title>
+      <mat-card-subtitle class="flex items-center justify-center">
+        <p class="subtitle-card">{{ subtitleDefaoult }}</p>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <ng-content></ng-content>
+    </mat-card-content>
+
+    <mat-card-actions
+      class="w-full justify-center items-center mt-8 flex-col flex gap-10 mb-5"
+    >
+      <div class="w-full flex justify-center items-center">
+        <button  app-button-default  (click)="submit()">{{primaryBtnText}}</button>
+      </div>
+
+      <div class="divider">
+        <div></div>
+        <span>or</span>
+        <div></div>
+      </div>
+
+      <div class="w-full flex justify-center items-center">
+        <button
+
+          app-button-defaul-white
+          (click)="navigate()"
+        >{{secondaryBtnText}}</button>
+      </div>
+    </mat-card-actions>
+  </mat-card> -->
+</main>

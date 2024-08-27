@@ -1,0 +1,65 @@
+<mat-toolbar class="toolbar-nav">
+  <div>
+    <button class="div-toolbar-logo" (click)="toggleCollapse()">
+      <img src="../../../assets/logo.png" alt="" class="logo-toolbar" />
+      <span class="span-logo-toolbar">Meu Curso</span>
+    </button>
+  </div>
+
+  <div class="container-calendar">
+    <!-- <p-calendar
+
+      [(ngModel)]="date1"
+      [showIcon]="true"
+      inputId="buttondisplay"
+      [showOnFocus]="false"
+    /> -->
+  </div>
+
+  <div class="container-alert-logo-user">
+    <span class="material-symbols-outlined icon-alert"> notifications </span>
+    <div class="container-logo-user">
+      <img src="../../../assets/user/user-logo.jpg" alt="" class="logo-user" />
+      <span class="user-toolbar">Fulano.tal</span>
+    </div>
+  </div>
+</mat-toolbar>
+
+<div
+  style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  "
+>
+  <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+    <div class="logo-container">
+      <!-- <button class="logo" (click)="toggleCollapse()">E</button>
+      <div class="logo-text" @fadeInOut *ngIf="collapsed">Expense Control</div> -->
+      <button
+        class="btn-close"
+        @rotate
+        *ngIf="collapsed"
+        (click)="closeSidenav()"
+      >
+        <i class="fal fa-times close-icon"></i>
+      </button>
+    </div>
+    <ul class="sidenav-nav">
+      <li class="sidenav-nav-item" *ngFor="let data of navData">
+        <a
+          class="sidenav-nav-link"
+          [routerLink]="[data.routeLink]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <i class="sidenav-link-icon" [class]="data.icon"></i>
+          <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+            {{ data.label }}
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
