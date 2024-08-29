@@ -5,13 +5,14 @@
   <section class="section-login">
     <div class="container-titulo">
       <h1 class="titulo-principal-container">Meu Curso</h1>
-      <h5>Meu Controle de Curso</h5>
+      <h5 class="subtitulo-principal-container">Controle de Curso</h5>
     </div>
+    <div>  <p class="subtitle-card">{{ subtitleDefaoult }}</p></div>
     <div class="container-inputs">
       <ng-content></ng-content>
     </div>
     <div class="w-full flex justify-center items-center">
-      <button  app-button-default  (click)="submit()">{{primaryBtnText}}</button>
+      <button class="btn-default" app-button-default  (click)="submit()">{{primaryBtnText}}</button>
     </div>
     <div class="divider">
       <div></div>
@@ -21,7 +22,7 @@
 
     <div class="w-full flex justify-center items-center">
       <button
-
+      class="btn-default"
         app-button-defaul-white
         (click)="navigate()"
       >{{secondaryBtnText}}</button>

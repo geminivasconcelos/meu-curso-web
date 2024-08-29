@@ -7,12 +7,13 @@ main {
   width: 100%;
 
   .section-logo {
-    background-color: rgb(216, 215, 215);
+    background-color: #4B4B4B;
     margin-left: 1%;
-    width: 40%;
+    width: 52%;
     height: 98%;
+    clip-path: polygon(0 0, 100% 0,90% 100%, 0% 100%);
 
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 
     display: flex;
@@ -25,7 +26,7 @@ main {
     flex-direction: column;
     width: 55%;
 
-    gap: 3rem;
+    gap: 2rem;
 
     align-items: center;
     justify-content: center;
@@ -35,9 +36,24 @@ main {
       flex-direction: column;
 
       .titulo-principal-container{
-        font-size: 3rem;
+        font-size: 3.5rem;
+        color: #3753FC;
+      }
+
+      .subtitulo-principal-container{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: -1rem;
+
       }
     }
+  }
+
+  .btn-default{
+    border-radius: 8px;
+    border: #3753FC 1px solid;
+
+    width: 16rem;
   }
 }
 
@@ -47,7 +63,7 @@ main {
   font-weight: 400;
   text-transform: uppercase;
 
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
