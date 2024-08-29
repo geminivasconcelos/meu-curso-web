@@ -1,1 +1,74 @@
-<p>register works!</p>
+<app-default-login-layout
+primaryBtnText="Register Now"
+secondaryBtnText="Login Now"
+subtitleDefaoult="Create an account to access"
+(submit)="submit()"
+(navigate)="navigate()"
+>
+  <div class="container-input-register" [formGroup]="registerForm">
+    <div class="flex flex-col w-2/3 gap-1">
+      <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
+        >Name </span
+      >
+      <div class="flex justify-content-center items-center w-full flex-col">
+        <p-inputGroup class="w-full flex flex-col">
+          <input
+            type="text"
+            pInputText
+            class="bg-sky-50 h-14 font-kanit p-2"
+            placeholder="Email@email.com"
+            formControlName="name"
+          />
+          <p-inputGroupAddon
+            class="bg-blue-b150 flex justify-center items-center"
+          >
+            <span class="material-symbols-outlined icon-input"> mail </span>
+          </p-inputGroupAddon>
+        </p-inputGroup>
+      </div>
+    </div>
+    <div class="flex flex-col w-2/3 gap-1">
+      <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
+        >Email Adress</span
+      >
+      <div class="flex justify-content-center items-center w-full flex-col">
+        <p-inputGroup class="w-full flex flex-col">
+          <input
+            type="text"
+            pInputText
+            class="bg-sky-50 h-14 font-kanit p-2"
+            placeholder="Email@email.com"
+            formControlName="email"
+          />
+          <p-inputGroupAddon
+            class="bg-blue-b150 flex justify-center items-center"
+          >
+            <span class="material-symbols-outlined icon-input"> mail </span>
+          </p-inputGroupAddon>
+        </p-inputGroup>
+      </div>
+    </div>
+
+    <div class="flex flex-col w-2/3 gap-1">
+      <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
+        >Password</span
+      >
+      <div class="flex justify-content-center items-center w-full flex-col">
+        <p-inputGroup class="w-full flex flex-col items-center justify-center">
+          <input
+            type="password"
+            pInputText
+            class="bg-sky-50 h-14 font-kanit p-2"
+            placeholder="Enter your password"
+            formControlName="password"
+          />
+          <p-inputGroupAddon
+            class="bg-blue-b150 flex justify-center items-center"
+          >
+            <span class="material-symbols-outlined icon-input"> lock </span>
+          </p-inputGroupAddon>
+        </p-inputGroup>
+      </div>
+    </div>
+  </div></app-default-login-layout
+>
