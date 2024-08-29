@@ -4,10 +4,10 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  margin-top: 5rem;
+  margin-top: 0.2rem;
   left: 1rem;
   width: 5rem;
-  height: 90vh;
+  height: 99vh;
   box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
 
   border-radius: 20px;
@@ -23,12 +23,20 @@
       text-align: center;
       width: 3rem;
       min-width: 3rem;
-      border-radius: 0.313rem;
+      border-radius: 10px;
       padding: 0.313rem;
       font-size: 24px;
       font-weight: 900;
       cursor: pointer;
       border: none;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img-logo{
+        width: 2.5rem;
+      }
     }
 
     .logo-text {
@@ -116,7 +124,7 @@
 
 .toolbar-nav {
   display: flex;
-  width: 100%;
+  width: calc(100% - 10rem);
   flex-direction: row;
   height: 5rem;
   justify-content: space-between;
@@ -195,7 +203,14 @@
     background: none !important;
   }
 
-  .p-icon-wrapper{
+  .p-icon-wrapper {
     color: white;
   }
+}
+
+.container-principal-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
