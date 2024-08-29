@@ -14,12 +14,13 @@ import {
 } from '@angular/router';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { BodyComponent } from './pages/body/body.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @Injectable()
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SidenavComponent, BodyComponent, RouterLinkActive],
+  imports: [RouterOutlet, SidenavComponent, BodyComponent, RouterLinkActive, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
