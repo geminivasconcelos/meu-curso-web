@@ -58,6 +58,7 @@ export class LoginComponent {
       next: () => console.log('sucesso'),
       error: () => console.log('error'),
     });
+    this.router.navigate(['/dashboard']);
   }
 
   navigate() {
