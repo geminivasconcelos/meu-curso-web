@@ -1,0 +1,120 @@
+.toolbar-nav {
+  // display: flex;
+  width: calc(100% - 7rem);
+  flex-direction: row;
+  height: 5rem;
+  justify-content: space-between;
+
+  margin-left: 7rem;
+  z-index: 0;
+  position: relative;
+  top: 0;
+  margin-top: 0.2rem;
+  transition: all .5s ease;
+
+  border-radius: 15px 0 15px 15px;
+
+  .div-toolbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-left: 1.9rem;
+
+    background-color: transparent;
+  }
+
+  .logo-toolbar {
+    height: 3rem;
+  }
+
+  .span-logo-toolbar {
+    // font-family: "Kanit";
+    font-size: 1.3rem;
+    border: none;
+  }
+
+  .container-alert-logo-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    .icon-alert {
+      color: #3753fc;
+    }
+
+    .container-logo-user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      gap: 1rem;
+      margin-right: 1.5rem;
+
+      .logo-user {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+      }
+
+      .user-toolbar {
+        font-family: "Kanit";
+        font-weight: 400;
+      }
+    }
+
+    .container-calendar {
+      button {
+        background: red;
+      }
+    }
+  }
+}
+
+:host ::ng-deep {
+  .p-calendar {
+    height: 2.5rem;
+    width: 25rem;
+
+    background-color: #3753fc;
+
+    border-radius: 9px;
+  }
+
+  input {
+    background-color: #f3f3f3;
+  }
+
+  .p-datepicker-title {
+    background: none !important;
+  }
+
+  .p-icon-wrapper {
+    color: white;
+  }
+}
+
+.container-principal-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.body-trimmed {
+  width: calc(100% - 18rem);
+  margin-left: 18rem;
+}
+
+.body-md-screen {
+  width: calc(100% - 7rem);
+  margin-left: 7rem;
+}
+
+
+.container-principal{
+  margin-left: 7rem;
+  z-index: 0;
+  position: relative;
+  top: 0;
+  transition: all .5s ease;
+}
