@@ -1,54 +1,53 @@
 <app-default-login-layout
-primaryBtnText="Login Now"
-secondaryBtnText="Signup Now"
-subtitleDefaoult="Login into your account"
-(submit)="submit()"
-(navigate)="navigate()">
-<div
-class="flex justify-content-center items-center w-full flex-col gap-10 mt-12"
-[formGroup]="loginForm"
+  primaryBtnText="Login Now"
+  secondaryBtnText="Signup Now"
+  subtitleDefaoult="Login into your account"
+  (submit)="submit()"
+  (navigate)="navigate()"
 >
-<div class="flex flex-col w-2/3 gap-1">
-  <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
-    >Email Adress</span
-  >
-  <div class="flex justify-content-center items-center w-full flex-col">
-    <p-inputGroup class="w-full flex flex-col">
-      <input
-        type="text"
-        pInputText
-        class="bg-sky-50 h-14 font-kanit p-2"
-        placeholder="email@email.com"
-        formControlName="email"
-      />
-      <p-inputGroupAddon
-        class="bg-blue-b150 flex justify-center items-center"
+  <div class="container-input-login" [formGroup]="loginForm">
+    <div class="flex flex-col w-2/3 gap-1">
+      <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
+        >Email Adress</span
       >
-        <span class="material-symbols-outlined icon-input"> mail </span>
-      </p-inputGroupAddon>
-    </p-inputGroup>
-  </div>
-</div>
+      <div class="flex justify-content-center items-center w-full flex-col">
+        <p-inputGroup class="w-full flex flex-col">
+          <input
+            type="text"
+            pInputText
+            class="bg-sky-50 h-14 font-kanit p-2"
+            placeholder="Email@email.com"
+            formControlName="email"
+          />
+          <p-inputGroupAddon
+            class="bg-blue-b150 flex justify-center items-center"
+          >
+            <span class="material-symbols-outlined icon-input"> mail </span>
+          </p-inputGroupAddon>
+        </p-inputGroup>
+      </div>
+    </div>
 
-<div class="flex flex-col w-2/3 gap-1">
-  <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
-    >Password</span
-  >
-  <div class="flex justify-content-center items-center w-full flex-col">
-    <p-inputGroup class="w-full flex flex-col items-center justify-center">
-      <input
-        type="password"
-        pInputText
-        class="bg-sky-50 h-14 font-kanit p-2"
-        placeholder="Enter your password"
-        formControlName="password"
-      />
-      <p-inputGroupAddon
-        class="bg-blue-b150 flex justify-center items-center"
+    <div class="flex flex-col w-2/3 gap-1">
+      <span class="flex float-start text-gray-b600 ml-2 font-medium text-sm"
+        >Password</span
       >
-        <span class="material-symbols-outlined icon-input"> lock </span>
-      </p-inputGroupAddon>
-    </p-inputGroup>
-  </div>
-</div>
-</div></app-default-login-layout>
+      <div class="flex justify-content-center items-center w-full flex-col">
+        <p-inputGroup class="w-full flex flex-col items-center justify-center">
+          <input
+            type="password"
+            pInputText
+            class="bg-sky-50 h-14 font-kanit p-2"
+            placeholder="Enter your password"
+            formControlName="password"
+          />
+          <p-inputGroupAddon
+            class="bg-blue-b150 flex justify-center items-center"
+          >
+            <span class="material-symbols-outlined icon-input"> lock </span>
+          </p-inputGroupAddon>
+        </p-inputGroup>
+      </div>
+    </div>
+  </div></app-default-login-layout
+>
