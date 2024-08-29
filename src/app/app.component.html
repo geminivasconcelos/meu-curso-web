@@ -1,9 +1,14 @@
 @if(currentRoute != '/login' && currentRoute != '/register'){
-  <app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
-  <app-body
-    [collapsed]="isSideNavCollapsed"
-    [screenWidth]="screenWidth"
-  ></app-body>
-  }@else{
-  <router-outlet></router-outlet>
-  }
+
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-header
+  [collapsed]="isSideNavCollapsed"
+  [screenWidth]="screenWidth"
+></app-header>
+<app-body
+  [collapsed]="isSideNavCollapsed"
+  [screenWidth]="screenWidth"
+></app-body>
+}@else{
+<router-outlet></router-outlet>
+}
