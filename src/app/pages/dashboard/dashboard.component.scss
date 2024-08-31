@@ -1,0 +1,51 @@
+.section-disciplinas-atuais {
+  .container-disciplina {
+    background-color: #efefef;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.8rem;
+
+    width: 18%;
+    padding: 0.5rem;
+
+    .nome-disciplina {
+      font-weight: 700;
+    }
+
+    .botoes-span-disciplina {
+      display: flex;
+      justify-content: space-between;
+
+      .btn-disciplina {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        color: gray;
+
+        .icon-disciplina {
+          color: gray;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+:host ::ng-deep {
+  .p-progressbar {
+    position: relative;
+    overflow: hidden;
+    height: 0.7rem;
+    font-size: 0.5rem;
+  }
+
+  .p-progressbar .p-progressbar-value {
+    background: #3753fc;
+  }
+}
