@@ -15,7 +15,7 @@ export const navbarData = [
     label: 'Relatorio de Curso',
   },
   {
-    routeLink: 'user-configuration',
+    routeLink: 'configuracao-usuario',
     icon: 'fal fa-cog',
     label: 'Configurações',
   },
