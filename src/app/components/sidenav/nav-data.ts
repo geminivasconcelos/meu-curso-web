@@ -5,13 +5,17 @@ export const navbarData = [
     label: 'Dashboard',
   },
   {
-    routeLink: 'relatorio-gastos',
+    routeLink: 'periodo-atual',
     icon: 'fal fa-chart-bar',
-    label: 'Relatorio de Gastos',
+    label: 'Período Atual',
   },
-
   {
-    routeLink: 'configuracoes',
+    routeLink: 'relatorio-curso',
+    icon: 'fal fa-chart-bar',
+    label: 'Relatorio de Curso',
+  },
+  {
+    routeLink: 'user-configuration',
     icon: 'fal fa-cog',
     label: 'Configurações',
   },
