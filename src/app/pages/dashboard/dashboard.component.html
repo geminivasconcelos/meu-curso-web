@@ -1,23 +1,55 @@
-<main>
+<main class="main-dashboard">
   <section class="section-disciplinas-atuais">
     <div class="container-disciplina">
       <span class="nome-disciplina">Programação de Software Básico</span>
       <div class="botoes-span-disciplina">
         <button class="btn-disciplina">
-          <span class="material-symbols-outlined icon-disciplina"> article </span> 6</button
-        ><button class="btn-disciplina"
-          ><span class="material-symbols-outlined icon-disciplina">border_color</span
-          >3</button
-        >
-        <button class="btn-disciplina"><span class="material-symbols-outlined icon-disciplina"> task </span>6</button>
+          <span class="material-symbols-outlined icon-disciplina">
+            article
+          </span>
+          6</button
+        ><button class="btn-disciplina">
+          <span class="material-symbols-outlined icon-disciplina"
+            >border_color</span
+          >3
+        </button>
+        <button class="btn-disciplina">
+          <span class="material-symbols-outlined icon-disciplina"> task </span>6
+        </button>
       </div>
       <span>
         <p-progressBar [value]="50" />
       </span>
     </div>
+
+    <div>agenda</div>
   </section>
 
   <section class="section-proximas-atividades">
-
+    <div class="container-atividades">
+      <span class="titulo-container">Atividades</span>
+      <ul class="ul-atividades">
+        <li class="li-atividades">
+          <div class="container-detalhe-atividade">
+            <div class="container-dados-atividade-checkbox">
+              <input
+                class="check-atividade-concluida"
+                type="checkbox"
+                id="scales"
+                name="scales"
+                checked
+              />
+              <div class="container-dados-atividade">
+                <span class="titulo-atividade">Lista de Algoritmos</span>
+                <span class="titulo-nome-materia"
+                  >Programação de Software Básico</span
+                >
+              </div>
+            </div>
+            <span class="span-dias-atividade">Faltam 12 Dias</span>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>

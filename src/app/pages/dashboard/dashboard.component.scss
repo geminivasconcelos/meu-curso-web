@@ -1,38 +1,113 @@
-.section-disciplinas-atuais {
-  .container-disciplina {
-    background-color: #efefef;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-
-    gap: 0.8rem;
-
-    width: 18%;
-    padding: 0.5rem;
-
-    .nome-disciplina {
-      font-weight: 700;
-    }
-
-    .botoes-span-disciplina {
+.main-dashboard {
+  display: flex;
+  flex-direction: row;
+  .section-disciplinas-atuais {
+    width: 75%;
+    .container-disciplina {
+      background-color: #efefef;
+      border-radius: 10px;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
 
-      .btn-disciplina {
-        border: none;
-        background: transparent;
-        cursor: pointer;
+      gap: 0.8rem;
 
+      width: 25%;
+      padding: 0.5rem;
+
+      .nome-disciplina {
+        font-weight: 700;
+      }
+
+      .botoes-span-disciplina {
         display: flex;
-        align-items: center;
-        gap: 0.2rem;
-        color: gray;
+        justify-content: space-between;
 
-        .icon-disciplina {
+        .btn-disciplina {
+          border: none;
+          background: transparent;
+          cursor: pointer;
+
+          display: flex;
+          align-items: center;
+          gap: 0.2rem;
           color: gray;
-          font-size: 1.4rem;
+
+          .icon-disciplina {
+            color: gray;
+            font-size: 1.4rem;
+          }
         }
       }
+    }
+  }
+
+  .section-proximas-atividades {
+    width: 30%;
+    // background-color: #bfbebe;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    .container-atividades {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .titulo-container {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+
+        margin-bottom: 14px;
+      }
+
+      .ul-atividades {
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+  }
+
+  .container-detalhe-atividade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    padding: 10px;
+    height: 5rem;
+
+    border: 1px solid #bfbebe;
+    border-radius: 10px;
+    background: #EFEFEF;
+
+    .container-dados-atividade-checkbox {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      .container-dados-atividade {
+        display: flex;
+        flex-direction: column;
+
+        .titulo-atividade {
+          font-size: 16px;
+          // font-weight: 600;
+        }
+
+        .titulo-nome-materia {
+          font-size: 13px;
+          font-weight: 400;
+          color: rgb(75, 75, 75);
+        }
+      }
+    }
+
+    .span-dias-atividade {
+      font-size: 10px;
+      color: gray;
     }
   }
 }
